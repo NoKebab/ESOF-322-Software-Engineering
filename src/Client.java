@@ -35,9 +35,9 @@ public class Client {
         revisedRun();
     }
 
-    /**
-     * Use this function as a helper to test a Client interaction with the chosen inventory module
-     */
+//    /**
+//     * Use this function as a helper to test a Client interaction with the chosen inventory module
+//     */
 //    public static void run() {
 //        // request selection of sort
 //        System.out.print("Sorting Options:\n1 for BubbleSort\n2 for MergeSort\n3 for QuickSort: ");
@@ -65,12 +65,11 @@ public class Client {
     public static void revisedRun() {
         Inventory inventory = new Inventory();
         Scanner console = new Scanner(System.in);
-        boolean isRunning = true;
 
         do {
             // request selection of sort
             System.out.println("Please pick a new sorting option");
-            System.out.print("Sorting Options:\n1 for BubbleSort\n2 for MergeSort\n3 for QuickSort: ");
+            System.out.print("Sorting Options:\n1 for BubbleSort\n2 for MergeSort\n3 for QuickSort\n4 for exit: ");
             int option = console.nextInt();
             // call default sorting strategy
             System.out.println("\nSort using default method: ");
@@ -80,11 +79,13 @@ public class Client {
                 case 1 -> inventory.setSortMethod(new BubbleSort());
                 case 2 -> inventory.setSortMethod(new MergeSort());
                 case 3 -> inventory.setSortMethod(new QuickSort());
-                default -> isRunning = false;
+                default -> {
+                    return;
+                }
             }
             System.out.println("\nPerform the new default sort: ");
-            inventory.preformSort(); // Run default sorting method
+            inventory.preformSort(); // Run new default sorting method
             System.out.println();
-        } while(isRunning);
+        } while(true);
     }
 }

@@ -1,15 +1,6 @@
-/*
- * TODO: ADD COMMENTS
- * 
- */
 public class BubbleSort implements ISortingMethod {
-
-    /*
-     * TODO: ADD COMMENTS
-     * 
-     */
+    // BubbleSorts implementation of the sort method
     public void sort() {
-        // code..
         System.out.println("Performing BubbleSort...");
     }
     

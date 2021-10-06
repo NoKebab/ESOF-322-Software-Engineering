@@ -1,15 +1,6 @@
-/*
- * TODO: ADD COMMENTS
- * 
- */
 public class QuickSort implements ISortingMethod {
-
-    /*
-     * TODO: ADD COMMENTS
-     * 
-     */
+    // QuickSorts implementation of the sort method
     public void sort() {
-        // code..
         System.out.println("Performing Quicksort...");
     }
     

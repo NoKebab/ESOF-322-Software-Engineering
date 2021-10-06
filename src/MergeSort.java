@@ -1,15 +1,6 @@
-/*
- * TODO: ADD COMMENTS
- * 
- */
 public class MergeSort implements ISortingMethod {
-    
-    /*
-     * TODO: ADD COMMENTS
-     * 
-     */
+    // MergeSorts implementation of the sort method
     public void sort() {
-        // code..
         System.out.println("Performing MergeSort...");
     }
 
